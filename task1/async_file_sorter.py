@@ -34,7 +34,7 @@ async def copy_file(file: AsyncPath) -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(threadName)s %(message)s")
 
-    # TODO Створити об'єкт ArgumentParser для обробки аргументів командного рядка
+    # Створюємо об'єкт ArgumentParser для обробки аргументів командного рядка
     parser = argparse.ArgumentParser(description="Async file sorter based on file extensions.")
     parser.add_argument("--source", type=str, required=True, help="Source folder to read files from.")
     parser.add_argument("--output", type=str, required=True, help="Output folder to sort files into.")
